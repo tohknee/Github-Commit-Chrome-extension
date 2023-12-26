@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Commit Extension</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <label for="personalToken">Personal Token:</label>
+    <input type="text" id="personalToken">
+    
+    <label for="owner">Owner:</label>
+    <input type="text" id="owner">
+
+    <label for="repo">Repository:</label>
+    <input type="text" id="repo">
+
+    <label for="commitMessage">Commit Message:</label>
+    <input type="text" id="commitMessage">
+
+    <label for="fileContent">File Content:</label>
+    <input type="text" id="fileContent">
+
+    <label for="interval">Commit Interval (ms):</label>
+    <input type="number" id="interval" value="1000" min="100">
+
+    <label for="commitCount">Number of Commits:</label>
+    <input type="number" id="commitCount" value="1" min="1">
+
+    <button id="startCommit">Start Commit</button>
+    <button id="stopCommit">Stop Commit</button>
+    <div>
+        <p>Commits: <span id="commitCounter">0</span></p>
+      </div>
+  </body>
+</html>
